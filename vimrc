@@ -21,6 +21,7 @@ set hlsearch
 set ttyfast
 set lazyredraw
 
+set number
 set ruler
 set report      =0
 
@@ -33,6 +34,8 @@ set undofile
 set undodir     =~/.vim/files/undo
 
 call plug#begin('~/.vim/plugged')
-Plug 'vim-test/vim-test'
-Plug 'lervag/vimtex'
+Plug 'gko/vim-coloresque'
+Plug 'maralla/completor.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/nerdtree'
 call plug#end() 
