@@ -6,50 +6,102 @@ if wezterm.config_builder then
     config = wezterm.config_builder()
 end
 
-config.enable_tab_bar = false
+--config.enable_tab_bar = false
 
 config.font = wezterm.font 'Inconsolata'
 
---[[ 1680x1050
+-- 1680x1050
 config.font_size = 13.0
-]]
---1440x900
-config.font_size = 16.0
 
+--[[1440x900
+config.font_size = 16.0
+]]
 --[[1366x768
 config.font_size = 11.25
 ]]
+
+config.use_fancy_tab_bar = false
 
 config.color_scheme = 'Nehellenia'
 
 config.color_schemes = {
     ['Serenity'] = {
-        foreground      = '#674E78',
         background      = '#FFE3F8',
-        cursor_bg       = '#8AE0D8',
-        cursor_fg       = '#0B426A',
-        cursor_border   = '#0B426A',
-        selection_fg    = '#f2bfc9',
-        selection_bg    = '#f19ec5',
+        foreground      = '#674E78',
+        cursor_bg       = '#DB92F4',
+        cursor_border   = '#DB92F4',
+        cursor_fg       = '#FDF298',
+        selection_bg    = '#FDF298',
+        selection_fg    = '#DB92F4',
         scrollbar_thumb = '#819EC0',
         split           = '#819EC0',
+        tab_bar = {
+            background = '#ffcaf2',
+            active_tab = {
+                bg_color = '#ffb0eb',
+                fg_color = '#4d3a5a',
+            },
+            inactive_tab = {
+                bg_color = '#ffcaf2',
+                fg_color = '#4d3a5a',
+            },
+            inactive_tab_hover = {
+                bg_color = '#f8e3ff',
+                fg_color = '#4d3a5a',
+                italic = true,
+            },
+            new_tab = {
+                bg_color = '#ffcaf2',
+                fg_color = '#4d3a5a',
+            },
+            new_tab_hover = {
+                bg_color = '#f8e3ff',
+                fg_color = '#4d3a5a',
+                italic = true,
+            },
+        },
         --                 black      red        green      yellow     blue       magenta    cyan       white
         ansi            = {'#4d3a5a', '#ff0083', '#00a294', '#ec8300', '#0c1eb8', '#7800b8', '#ff69d3', '#fddbff'},
         brights         = {'#4d3a5a', '#ff0083', '#00a294', '#ec8300', '#0c1eb8', '#7800b8', '#ff69d3', '#fddbff'},
     },
     ['Nehellenia'] = {
-        foreground      = '#fddbff',
         background      = '#1b1b2c',
-        cursor_bg       = '#916EA9',
-        cursor_fg       = '#fddbff',
-        cursor_border   = '#fddbff',
-        selection_fg    = '#3c2e47',
-        selection_bg    = '#d6c5d8',
+        foreground      = '#fddbff',
+        cursor_bg       = '#9697EA',
+        cursor_border   = '#9697ea',
+        cursor_fg       = '#FDFFDC',
+        selection_bg    = '#54002E',
+        selection_fg    = '#FDF298',
         scrollbar_thumb = '#af748d',
         split           = '#af74bd',
+        tab_bar = {
+            background = '#11111c',
+            active_tab = {
+                bg_color = '#38385b',
+                fg_color = '#fddbff',
+            },
+            inactive_tab = {
+                bg_color = '#25253c',
+                fg_color = '#fddbff',
+            },
+            inactive_tab_hover = {
+                bg_color = '#3e2e4c',
+                fg_color = '#fddbff',
+                italic = true,
+            },
+            new_tab = {
+                bg_color = '#25253c',
+                fg_color = '#fddbff',
+            },
+            new_tab_hover = {
+                bg_color = '#3e2e4c',
+                fg_color = '#fddbff',
+                italic = true,
+            },
+        },
         --                 black      red        green      yellow     blue       magenta    cyan       white
-        ansi            = {'#1E1F31', '#c72079', '#37816f', '#ffbc4d', '#819EC0', '#BF56CA', '#FF84FC', '#ffe3f8'},
-        brights         = {'#1E1F31', '#c72079', '#37816f', '#ffbc4d', '#819EC0', '#BF56CA', '#FF84FC', '#ffe3f8'},
+        ansi            = {'#1E1F31', '#D90E7A', '#37816f', '#ffbc4d', '#819EC0', '#BF56CA', '#FF84FC', '#ffe3f8'},
+        brights         = {'#1E1F31', '#D90E7A', '#37816f', '#ffbc4d', '#819EC0', '#BF56CA', '#FF84FC', '#ffe3f8'},
    },
 }
 
