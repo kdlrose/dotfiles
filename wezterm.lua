@@ -34,13 +34,13 @@ config.color_schemes = {
         scrollbar_thumb = '#819EC0',
         split           = '#819EC0',
         --                 black      red        green      yellow     blue       magenta    cyan       white
-        ansi            = {'#261d2d', '#ff0083', '#00a294', '#ec8300', '#0c1eb8', '#7800b8', '#ff69d3', '#e3d1e5'},
+        ansi            = {'#4d3a5a', '#ff0083', '#00a294', '#ec8300', '#0c1eb8', '#7800b8', '#ff69d3', '#e3d1e5'},
         brights         = {'#4d3a5a', '#ff0083', '#00a294', '#ec8300', '#0c1eb8', '#7800b8', '#ff69d3', '#e3d1e5'},
     },
     ['Nehellenia'] = {
         foreground      = '#fddbff',
         background      = '#1e1f31',
-        cursor_bg       = '#B175AC',
+        cursor_bg       = '#916EA9',
         cursor_fg       = '#fddbff',
         cursor_border   = '#fddbff',
         selection_fg    = '#3c2e47',
