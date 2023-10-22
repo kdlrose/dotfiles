@@ -10,12 +10,12 @@ config.enable_tab_bar = false
 
 config.font = wezterm.font 'Inconsolata'
 
--- 1680x1050
+--[[ 1680x1050
 config.font_size = 13.0
-
---[[1440x900
-config.font_size = 16.0
 ]]
+--1440x900
+config.font_size = 16.0
+
 --[[1366x768
 config.font_size = 11.25
 ]]
@@ -34,12 +34,12 @@ config.color_schemes = {
         scrollbar_thumb = '#819EC0',
         split           = '#819EC0',
         --                 black      red        green      yellow     blue       magenta    cyan       white
-        ansi            = {'#4d3a5a', '#ff0083', '#00a294', '#ec8300', '#0c1eb8', '#7800b8', '#ff69d3', '#e3d1e5'},
-        brights         = {'#4d3a5a', '#ff0083', '#00a294', '#ec8300', '#0c1eb8', '#7800b8', '#ff69d3', '#e3d1e5'},
+        ansi            = {'#4d3a5a', '#ff0083', '#00a294', '#ec8300', '#0c1eb8', '#7800b8', '#ff69d3', '#fddbff'},
+        brights         = {'#4d3a5a', '#ff0083', '#00a294', '#ec8300', '#0c1eb8', '#7800b8', '#ff69d3', '#fddbff'},
     },
     ['Nehellenia'] = {
         foreground      = '#fddbff',
-        background      = '#1e1f31',
+        background      = '#1b1b2c',
         cursor_bg       = '#916EA9',
         cursor_fg       = '#fddbff',
         cursor_border   = '#fddbff',
@@ -48,8 +48,8 @@ config.color_schemes = {
         scrollbar_thumb = '#af748d',
         split           = '#af74bd',
         --                 black      red        green      yellow     blue       magenta    cyan       white
-        ansi            = {'#261d2d', '#c72079', '#37816f', '#ffbc4d', '#819EC0', '#BF56CA', '#FF84FC', '#ffe3f8'},
-        brights         = {'#261d2d', '#c72079', '#37816f', '#ffbc4d', '#819EC0', '#BF56CA', '#FF84FC', '#ffe3f8'},
+        ansi            = {'#1E1F31', '#c72079', '#37816f', '#ffbc4d', '#819EC0', '#BF56CA', '#FF84FC', '#ffe3f8'},
+        brights         = {'#1E1F31', '#c72079', '#37816f', '#ffbc4d', '#819EC0', '#BF56CA', '#FF84FC', '#ffe3f8'},
    },
 }
 
