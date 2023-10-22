@@ -6,8 +6,6 @@ if wezterm.config_builder then
     config = wezterm.config_builder()
 end
 
---config.enable_tab_bar = false
-
 config.font = wezterm.font 'Inconsolata'
 
 -- 1680x1050
@@ -20,21 +18,23 @@ config.font_size = 16.0
 config.font_size = 11.25
 ]]
 
+config.enable_tab_bar = true
+
 config.use_fancy_tab_bar = false
 
-config.color_scheme = 'Nehellenia'
+config.color_scheme = 'Serenity'
 
 config.color_schemes = {
     ['Serenity'] = {
         background      = '#FFE3F8',
-        foreground      = '#674E78',
         cursor_bg       = '#DB92F4',
         cursor_border   = '#DB92F4',
         cursor_fg       = '#FDF298',
+        foreground      = '#674E78',
         selection_bg    = '#FDF298',
-        selection_fg    = '#DB92F4',
-        scrollbar_thumb = '#819EC0',
-        split           = '#819EC0',
+        selection_fg    = '#916EA9',
+        scrollbar_thumb = '#ffb0eb',
+        split           = '#ffb0eb',
         tab_bar = {
             background = '#ffcaf2',
             active_tab = {
@@ -66,14 +66,14 @@ config.color_schemes = {
     },
     ['Nehellenia'] = {
         background      = '#1b1b2c',
-        foreground      = '#fddbff',
         cursor_bg       = '#9697EA',
         cursor_border   = '#9697ea',
         cursor_fg       = '#FDFFDC',
-        selection_bg    = '#54002E',
-        selection_fg    = '#FDF298',
-        scrollbar_thumb = '#af748d',
-        split           = '#af74bd',
+        foreground      = '#fddbff',
+        selection_bg    = '#B175AC',
+        selection_fg    = '#FEF6EB',
+        scrollbar_thumb = '#38385b',
+        split           = '#38385b',
         tab_bar = {
             background = '#11111c',
             active_tab = {
