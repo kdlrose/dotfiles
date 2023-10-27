@@ -34,7 +34,7 @@ set undofile
 set undodir     =~/.vim/files/undo
 
 call plug#begin('~/.vim/plugged')
-Plug 'gko/vim-coloresque'
+Plug 'shmargum/vim-sass-colors'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 call plug#end() 
