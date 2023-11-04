@@ -1,24 +1,31 @@
 local wezterm = require 'wezterm'
 
-local config = {}
+local padding = {
+    left = "1cell",
+    right = "1cell",
+    top = "0.5cell",
+    bottom = "0.5cell",
+}
 
-if wezterm.config_builder then
-    config = wezterm.config_builder()
+wezterm.time.call_after(600, function()
+    wezterm.reload_configuration()
+end)
+
+local function get_theme()
+    local _time = os.date("*t")
+    if _time.hour >= 1 and _time.hour < 9 then
+        return "Moon Queen Nehellenia"
+    elseif _time.hour >= 9 and _time.hour < 18 then
+        return "Moon Queen Serenity"
+    elseif _time.hour >= 18 and _time.hour < 24 or _time.hour >= 0 and _time.hour < 1 then
+        return "Moon Queen Nehellenia"
+    end
 end
 
-config.font = wezterm.font 'Inconsolata'
-
--- 1680x1050
-config.font_size = 13.0
-
--- 1440x900 config.font_size = 16.0
-
--- 1366x768 config.font_size = 11.25
-
-config.enable_tab_bar = true
-
-config.use_fancy_tab_bar = false
-
-config.color_scheme = 'Moon Queen Serenity'
-
-return config
+return {
+    font = wezterm.font 'Inconsolata',
+    font_size = 13.0,
+    color_scheme = get_theme(),
+    enable_tab_bar = true,
+    use_fancy_tab_bar = false
+}
