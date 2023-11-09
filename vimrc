@@ -21,6 +21,7 @@ set hlsearch
 set ttyfast
 set lazyredraw
 
+set number
 set ruler
 set report      =0
 
