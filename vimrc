@@ -42,6 +42,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'preservim/vim-markdown'
 Plug 'tpope/vim-fugitive'
-call plug#end() 
+Plug 'alvan/vim-closetag'
+Plug 'jceb/vim-orgmode'
+call plug#end()
 
 let g:clang_library_path='/usr/lib/libclang.so.16'
