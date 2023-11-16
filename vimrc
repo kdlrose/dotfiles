@@ -7,7 +7,6 @@ set expandtab
 set softtabstop =4
 set shiftwidth	=4
 set shiftround
-set textwidth   =80
 set backspace	=indent,eol,start
 set hidden
 set display	=lastline
@@ -35,15 +34,17 @@ set undodir     =~/.vim/files/undo
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-eunuch'
-Plug 'scrooloose/nerdtree'
 Plug 'shmargum/vim-sass-colors'
-Plug 'xavierd/clang_complete'
-Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'preservim/vim-markdown'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-speeddating'
 Plug 'alvan/vim-closetag'
 Plug 'jceb/vim-orgmode'
+call plug#end()
+
+let g:clang_library_path='/usr/lib/libclang.so.16'
+rgmode'
 call plug#end()
 
 let g:clang_library_path='/usr/lib/libclang.so.16'
