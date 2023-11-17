@@ -20,7 +20,7 @@ set hlsearch
 set ttyfast
 set lazyredraw
 
-set number
+" set number
 set ruler
 set report      =0
 
@@ -43,8 +43,4 @@ Plug 'alvan/vim-closetag'
 Plug 'jceb/vim-orgmode'
 call plug#end()
 
-let g:clang_library_path='/usr/lib/libclang.so.16'
-rgmode'
-call plug#end()
-
-let g:clang_library_path='/usr/lib/libclang.so.16'
+" let g:clang_library_path='/usr/lib/libclang.so.16'  
