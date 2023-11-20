@@ -42,5 +42,9 @@ Plug 'tpope/vim-speeddating'
 Plug 'xavierd/clang_complete'
 call plug#end()
 
+" for PC
+" let g:clang_library_path='/usr/lib/libclang.so.16'
+
+" for iSH
 let g:clang_library_path='/usr/lib/libclang.so.11.1'
 let g:python3_host_prog = '/usr/lib/python3'
