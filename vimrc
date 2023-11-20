@@ -33,14 +33,14 @@ set undofile
 set undodir     =~/.vim/files/undo
 
 call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-eunuch'
-Plug 'shmargum/vim-sass-colors'
-Plug 'mattn/emmet-vim'
-Plug 'preservim/vim-markdown'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-speeddating'
 Plug 'alvan/vim-closetag'
 Plug 'jceb/vim-orgmode'
+Plug 'mattn/emmet-vim'
+Plug 'preservim/vim-markdown'
+Plug 'shmargum/vim-sass-colors'
+Plug 'tpope/vim-speeddating'
+Plug 'xavierd/clang_complete'
 call plug#end()
 
-" let g:clang_library_path='/usr/lib/libclang.so.16'  
+let g:clang_library_path='/usr/lib/libclang.so.11.1'
+let g:python3_host_prog = '/usr/lib/python3'
