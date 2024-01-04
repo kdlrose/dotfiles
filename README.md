@@ -2,6 +2,11 @@
 
 ## changelog
 
+### 24-01-04
+- bye vim-orgmode
+- obsidian style settings
+- keymap
+
 ### 23-12-29
 
 - removed rofi
