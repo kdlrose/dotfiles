@@ -1,37 +1,38 @@
 set nocompatible
-filetype plugin indent on
+set hidden
+
+" ============= editing ============
+
+filetype plugin on
+filetype indent on
 syntax on
 
 set autoindent
+set backspace	=indent,eol,start
+set breakindent
 set expandtab
+set linebreak
 set softtabstop =4
 set shiftwidth	=4
 set shiftround
-set backspace	=indent,eol,start
-set hidden
+set showmatch
+set smarttab
+set softtabstop =4
+
+" ============= display ============
+
 set display	=lastline
-set textwidth   =80
-
-set showmode
-set showcmd
-
-set incsearch
-set hlsearch
-
-set ttyfast
-set lazyredraw
-
-set number
-set ruler
+" set number
+set nomodeline
 set report      =0
+set showcmd
+set showmode
+set ruler
+set textwidth   =80
+set visualbell
+set noerrorbells
 
-set backup
-set backupdir   =~/.vim/files/backup/
-set backupext   =-vimbackup
-set backupskip  =~/.vim/files/swap//
-set updatecount =100
-set undofile
-set undodir     =~/.vim/files/undo
+" ============= plugins ============
 
 call plug#begin('~/.vim/plugged')
 Plug 'alvan/vim-closetag'
@@ -43,9 +44,37 @@ Plug 'preservim/vim-markdown'
 Plug 'xavierd/clang_complete'
 call plug#end()
 
-" for PC
-let g:clang_library_path='/usr/lib/libclang.so.16'
+" ========== navigation ============
+
+set scrolloff   =4
+set ttyfast
+set lazyredraw
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" ============= changes ============
+
+set autoread
+set backup
+set backupdir   =~/.vim/files/backup/
+set backupext   =-vimbackup
+set backupskip  =~/.vim/files/swap//
+set history     =1000
+set updatecount =100
+set undodir     =~/.vim/files/undo
+set undofile
+set undolevels  =1000
+
+" ============ libraries ============
 "
-" for iSH
+" macOS
+let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+"
+" arch
+" let g:clang_library_path='/usr/lib/libclang.so.16'
+"
+" alpine
 " let g:clang_library_path='/usr/lib/libclang.so.11.1'
 " let g:python3_host_prog = '/usr/lib/python3'
