@@ -4,31 +4,28 @@ set hidden
 " ============= editing ============
 
 filetype plugin on
-filetype indent on
 syntax on
 
 set autoindent
 set backspace	=indent,eol,start
 set breakindent
 set expandtab
-set linebreak
 set softtabstop =4
 set shiftwidth	=4
 set shiftround
 set showmatch
-set smarttab
-set softtabstop =4
 
 " ============= display ============
 
 set display	=lastline
-" set number
+set number
 set nomodeline
 set report      =0
 set showcmd
 set showmode
 set ruler
 set textwidth   =80
+"set t_Co        =16
 set visualbell
 set noerrorbells
 
@@ -36,11 +33,13 @@ set noerrorbells
 
 call plug#begin('~/.vim/plugged')
 Plug 'alvan/vim-closetag'
+Plug 'ap/vim-css-color'
 Plug 'chrisbra/csv.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'othree/xml.vim'
 Plug 'preservim/vim-markdown'
+" Plug 'shmargum/vim-sass-colors'
 Plug 'xavierd/clang_complete'
 call plug#end()
 
