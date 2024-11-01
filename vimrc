@@ -69,7 +69,7 @@ set undolevels  =1000
 " ============ libraries ============
 "
 " macOS
-let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+" let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 "
 " arch
 " let g:clang_library_path='/usr/lib/libclang.so.16'
