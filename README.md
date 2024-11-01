@@ -1,4 +1,3 @@
 # kdlrose/dotfiles
 
-Config files for my Unix/Android OS ecosystem across MacOS, iPad OS, and Arch
-Linux.
+config files and scripts for arch linux environment used with macos 12, ipad OS and android
