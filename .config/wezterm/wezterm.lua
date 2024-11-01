@@ -13,16 +13,16 @@ end)
 
 local function get_theme()
     local _time = os.date("*t")
-    if _time.hour >= 7 and _time.hour < 19 then
-        return "Moon Queen Full"
+    if _time.hour >= 8 and _time.hour < 18 then
+        return "Yume"
     end
-    return "Moon Queen New"
+    return "Mugen"
 end
 
 return {
-    font = wezterm.font 'Binchotan_Sharp',
-    font_size = 18,
+    font = wezterm.font 'JetBrainsMono Nerd Font',
+    font_size = 10,
     color_scheme = get_theme(),
-    enable_tab_bar = true,
+    enable_tab_bar = false,
     use_fancy_tab_bar = false
 }

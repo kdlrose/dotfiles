@@ -1,0 +1,64 @@
+# Sample config file
+
+# The theme colours can be an rgb string of the form "255, 255, 255" or a string that references the colours from your terminal theme: Reset, Black, Red, Green, Yellow, Blue, Magenta, Cyan, Gray, DarkGray, LightRed, LightGreen, LightYellow, LightBlue, LightMagenta, LightCyan, White.
+theme:
+  active: Red # current playing song in list
+  banner: LightRed # the "spotify-tui" banner on launch
+  error_border: Green # error dialog border
+  error_text: Green # error message text (e.g. "Spotify API reported error 404")
+  hint: Yellow # hint text in errors
+  hovered: Blue # hovered pane border
+  inactive: White # borders of inactive panes
+  playbar_background: Black # background of progress bar
+  playbar_progress: Blue # filled-in part of the progress bar
+  playbar_progress_text: White # song length and time played/left indicator in the progress bar
+  playbar_text: Magenta # artist name in player pane
+  selected: Cyan # a) selected pane border, b) hovered item in list, & c) track title in player
+  text: White # text in panes
+  header: Cyan # header text in panes (e.g. 'Title', 'Artist', etc.)
+
+behavior:
+  seek_milliseconds: 5000
+  volume_increment: 10
+  tick_rate_milliseconds: 250
+  enable_text_emphasis: true
+  show_loading_indicator: true
+  enforce_wide_search_bar: false
+  liked_icon: ♥
+  shuffle_icon: 🔀
+  repeat_track_icon: 🔂
+  repeat_context_icon: 🔁
+  playing_icon: ▶
+  paused_icon: ⏸
+  set_window_title: true
+
+keybindings:
+  # Key stroke can be used if it only uses two keys:
+  # ctrl-q works,
+  # ctrl-alt-q doesn't.
+  back: "esc"
+
+  jump_to_album: "a"
+
+  # Shift modifiers use a capital letter (also applies with other modifier keys
+  # like ctrl-A)
+  jump_to_artist_album: "A"
+
+  manage_devices: "d"
+  decrease_volume: "-"
+  increase_volume: "+"
+  toggle_playback: " "
+  seek_backwards: "<"
+  seek_forwards: ">"
+  next_track: "n"
+  previous_track: "p"
+  copy_song_url: "c"
+  copy_album_url: "C"
+  help: "?"
+  shuffle: "ctrl-s"
+  repeat: "r"
+  search: "/"
+  audio_analysis: "v"
+  jump_to_context: "o"
+  basic_view: "B"
+  add_item_to_queue: "z"

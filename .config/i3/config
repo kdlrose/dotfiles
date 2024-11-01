@@ -11,7 +11,7 @@
 
 set $mod Mod4
 
-font pango:Cozette O
+font pango:JetBrains Mono Nerd Font 8
 
 exec --no-startup-id dex --autostart --environment i3
 
@@ -34,7 +34,7 @@ bindsym $mod+Return exec wezterm
 bindsym $mod+Shift+q kill
 
 # bindsym $mod+d exec dmenu_run -nb '#ffcaf2' -sf '#4d3a5a' -sb '#fdf298' -nf '#674e78' -fn 'Cozette'
-bindsym $mod+d exec dmenu_run -nb '#1b1b2c' -sf '#fef6eb' -sb '#9697ea' -nf '#fddbff' -fn 'Cozette'
+bindsym $mod+d exec dmenu_run -nb '#0d0917' -sf '#edf7f9' -sb '#3a306f' -nf '#fcfdff' -fn 'Cozette'
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -123,14 +123,14 @@ mode "resize" {
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
         bindsym h resize shrink width 10 px or 10 ppt
-        bindsym l resize grow height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
         bindsym j resize shrink height 10 px or 10 ppt
-        bindsym k resize grow width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Down resize shrink height 10 px or 10 ppt
+        bindsym Up resize grow height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
@@ -143,9 +143,9 @@ bindsym $mod+r mode "resize"
 
 #############
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-# exec_always --no-startup-id feh --bg-fill ~/m/img/wp/cel1.jpeg
-exec_always --no-startup-id feh --bg-fill ~/m/img/wp/aot-s2-ost.jpg
 exec_always --no-startup-id picom -b
+exec_always --no-startup-id ~/b/hdmi.sh
+exec_always --no-startup-id feh --bg-fill ~/m/img/sm-artbook-iii/poster4.jpg
 for_window [class="^.*"] border pixel 0
-gaps inner 8px
-gaps outer 4px
+gaps inner 24px
+gaps outer 12px
