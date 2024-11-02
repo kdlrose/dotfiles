@@ -3,6 +3,7 @@ set hidden
 
 " ============= editing ============
 
+filetype on
 filetype plugin on
 syntax on
 
@@ -33,7 +34,7 @@ set noerrorbells
 
 call plug#begin('~/.vim/plugged')
 Plug 'alvan/vim-closetag'
-Plug 'ap/vim-css-color'
+" Plug 'ap/vim-css-color'
 Plug 'chrisbra/csv.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'

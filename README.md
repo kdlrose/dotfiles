@@ -8,25 +8,29 @@ config files and scripts for arch linux environment used with macos 12, ipad OS 
 .
 ├── b
 ├── d/
+│   ├── caps
 │   └── obsidian
 ├── m/
 │   ├── aud
 │   ├── doc
-│   ├── img/
-│   │   └── caps
-│   └── vid
+│   ├── img
+│   └── torr
 ├── p
 └── s
+└── v 
+
 ```
 
-- b: bash scripts and symlinks
+- b: bash scripts
 - d: writing projects et al
 - m: downloads
 - p: public repositories
 - s: other people's source code, so far qmk, textfox, yay
+- v: symlinks to mountpoints
 
 ## visual environment
 
+- autorandr
 - dmenu
 - i3
 - picom
@@ -34,4 +38,3 @@ config files and scripts for arch linux environment used with macos 12, ipad OS 
 - spotify-tui
 - textfox
 - wezterm
-- xrandr

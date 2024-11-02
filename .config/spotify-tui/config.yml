@@ -1,21 +1,36 @@
-# Sample config file
+# moon-queen ansi
+#
+# BLACK       #5a4469   #1a0c47
+# RED         #fa4eb2   #fb569b   pink
+# GREEN       #134db1   #3461d8   blue
+# YELLOW      #b41527   #b00c03   red
+# BLUE        #318509   #499123   green
+# MAGENTA     #fa9604   #fc8f0c   yellow
+# CYAN        #7441ba   #614abf   purple
+# WHITE       #7a6199   #aabcea
+#
+# LIGHTRED    #ff7fd4   #fd8cda
+# LIGHTGREEN  #3098d7   #4d8fe5
+# LIGHTYELLOW #e03c54   #f72f39
+# LIGHTBLUE   #599a01   #7faf3f
+# LIGHTMAGENTA#fac529   #fce815
+# LIGHTCYAN   #8c4ee2   #8466f5
 
-# The theme colours can be an rgb string of the form "255, 255, 255" or a string that references the colours from your terminal theme: Reset, Black, Red, Green, Yellow, Blue, Magenta, Cyan, Gray, DarkGray, LightRed, LightGreen, LightYellow, LightBlue, LightMagenta, LightCyan, White.
 theme:
   active: Red # current playing song in list
   banner: LightRed # the "spotify-tui" banner on launch
-  error_border: Green # error dialog border
-  error_text: Green # error message text (e.g. "Spotify API reported error 404")
+  error_border: LightYellow # error dialog border
+  error_text: Yellow # error message text (e.g. "Spotify API reported error 404")
   hint: Yellow # hint text in errors
-  hovered: Blue # hovered pane border
-  inactive: White # borders of inactive panes
-  playbar_background: Black # background of progress bar
-  playbar_progress: Blue # filled-in part of the progress bar
+  hovered: LightYellow # hovered pane border
+  inactive: LightRed # borders of inactive panes
+  playbar_background: Red # background of progress bar
+  playbar_progress: LightRed # filled-in part of the progress bar
   playbar_progress_text: White # song length and time played/left indicator in the progress bar
-  playbar_text: Magenta # artist name in player pane
-  selected: Cyan # a) selected pane border, b) hovered item in list, & c) track title in player
-  text: White # text in panes
-  header: Cyan # header text in panes (e.g. 'Title', 'Artist', etc.)
+  playbar_text: Red # artist name in player pane
+  selected: Red # a) selected pane border, b) hovered item in list, & c) track title in player
+  text: Red # text in panes
+  header: Red # header text in panes (e.g. 'Title', 'Artist', etc.)
 
 behavior:
   seek_milliseconds: 5000
